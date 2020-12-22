@@ -1,6 +1,6 @@
 FROM golang:1.15 AS builder
 
-ARG hugo_version=0.76.3
+ARG hugo_version=0.79.1
 ARG hugo_dl_url=https://github.com/gohugoio/hugo/releases/download/v"$hugo_version"/hugo_extended_"$hugo_version"_Linux-64bit.tar.gz
 
 WORKDIR /hugo
