@@ -232,6 +232,7 @@ func checkout(branch string) error {
     } else {
       fmt.Print("status seems to be dirty, please check your git folder\n")
       fmt.Printf("git status: %s\n", err.Error())
+      return err
     }
   }
   cmd = exec.Command("git", "checkout", branch)
